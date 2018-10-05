@@ -135,7 +135,7 @@ echo -e "|   Downloading agent.sh to /etc/lsm-ss88\n|\n|   + $(wget -nv -o /dev/
 if [ -f /etc/lsm-ss88/agent.sh ]
 then
 	# Create auth file
-	echo "$1" > /etc/lsm-ss88/auth.log
+	echo "$1" > /etc/lsm-ss88/auth.key
 	
 	# Create user
 	useradd lsm-ss88 -r -d /etc/lsm-ss88 -s /bin/false
