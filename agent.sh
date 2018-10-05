@@ -21,9 +21,9 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 version="0.7.7"
 
 # Authentication required
-if [ -f /etc/lsm-ss88/auth.log ]
+if [ -f /etc/lsm-ss88/auth.key ]
 then
-	auth=($(cat /etc/lsm-ss88/auth.log))
+	auth=($(cat /etc/lsm-ss88/auth.key))
 else
 	echo "Error: Authentication log is missing."
 	exit 1
